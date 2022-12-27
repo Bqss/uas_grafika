@@ -1,2 +1,7 @@
-public class Main {
+import java.awt.*;
+
+public class Main extends Frame {
+    public Main(){
+
+    }
 }
