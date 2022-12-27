@@ -1,14 +1,13 @@
 package objects;
-import java.awt.geom.Arc2D;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
 
 public class Pesawat extends Path2D.Double {
-    public Pesawat(){
-        Ellipse2D.Double l = new Ellipse2D.Double(248,308,25,25);
-        Ellipse2D.Double l2 = new Ellipse2D.Double(302.7,303,32,32);
-        Ellipse2D.Double l3 = new Ellipse2D.Double(371.5,306,32.5,32.5);
-        this.moveTo(172,240);
+    public Pesawat(int x, int y){
+        Ellipse2D.Double l = new Ellipse2D.Double(x + 76,y + 68,25,25);
+        Ellipse2D.Double l2 = new Ellipse2D.Double(x + 130.7,y + 63,32,32);
+        Ellipse2D.Double l3 = new Ellipse2D.Double(x + 199.5,y + 66,32.5,32.5);
+        this.moveTo(x,y);
         this.curveTo(192,236,199,262,205,275);
         this.curveTo(206,276,207,277.26,209,277);
         this.quadTo(335,250,465.5,281);
@@ -41,7 +40,6 @@ public class Pesawat extends Path2D.Double {
         this.quadTo(279,396,286,398);
         this.lineTo(263,390.6);
         this.lineTo(221,385.6);
-
 
         this.append(l,false);
         this.append(l2,false);
