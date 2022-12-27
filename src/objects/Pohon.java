@@ -21,7 +21,7 @@ public class Pohon extends Path2D.Double {
         this.moveTo(568 + 193/2,510);
         this.lineTo(732,457);
         this.moveTo(568 + 193/2,533);
-        this.lineTo(600 + 53/2,501);
+        this.lineTo(627,481);
 
     }
 }
