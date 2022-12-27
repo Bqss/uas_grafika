@@ -1,12 +1,28 @@
+import javax.swing.*;
 import java.awt.*;
 
-public class Main extends Frame {
-    public Main(){
 
+import objects.Pesawat;
+
+
+
+public class Main extends JFrame {
+    public Main() {
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    @Override
-    public void paint(Graphics g) {
+    public void paint(Graphics g){
+        Graphics2D g2d = (Graphics2D) g;
+        Pesawat miring = new Pesawat();
+        g2d.draw(miring);
 
+    }
+    public static void main(String[] args) {
+        Main test = new Main();
+        test.setSize(1920,1080);
+        test.setLocationRelativeTo(null);
+        test.setVisible(true);
     }
 }
+
+
