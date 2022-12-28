@@ -1,9 +1,12 @@
 package objects;
 
 import java.awt.geom.Path2D;
+import java.awt.geom.RoundRectangle2D;
 
 public class GedungKantor extends Path2D.Double {
     public GedungKantor(double x, double y){
+
+//        RoundRectangle2D.double  rbf1 = new RoundRectangle2D.Double();
 
         int gap = 17;
 
