@@ -8,7 +8,6 @@ public class Pohon2 extends Path2D.Double {
     public Pohon2(){
         Daun();
         Batang();
-
     }
     public Shape Daun(){
         //Daun

@@ -12,14 +12,12 @@ public class GedungToko extends Path2D.Double {
 //        RoundRectangle2D kotak2 = new RoundRectangle2D.Float(659,497,74,111,71,71);
 //        this.append(kotak2, false);
         this.moveTo(733,610);
-        this.lineTo(733,500);
-        this.moveTo(662,610);
+        this.lineTo(662,610);
         this.lineTo(733,610);
-        this.moveTo(662,610);
+        this.lineTo(662,610);
         this.lineTo(662,572);
         this.curveTo(662,572,683,521,733,500);
-
-
+        this.closePath();
     }
 
 
