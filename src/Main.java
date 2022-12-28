@@ -12,11 +12,9 @@ public class Main extends JFrame {
 
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
+        GedungMinimalis gm1 = new GedungMinimalis(400,500);
 
-//        Pesawat miring = new Pesawat(400,240, g2d);
-//         g2d.draw(miring);
-        RumahMinimalis rm1 = new RumahMinimalis(154,628);
-        g2d.draw(rm1);
+        g2d.draw(gm1);
 
     }
     public static void main(String[] args) {
