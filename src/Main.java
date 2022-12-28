@@ -18,12 +18,12 @@ public class Main extends JFrame {
         g2d.draw(gedung1);
 //        g2d.draw(miring);
 
-        g2d.draw(miring);
-        g2d.draw(p);
+        // g2d.draw(miring);
+        // g2d.draw(p);
     }
     public static void main(String[] args) {
         Main test = new Main();
-        test.setSize(1366,768);
+        test.setSize(1920,1080);
         test.setLocationRelativeTo(null);
         test.setVisible(true);
     }
