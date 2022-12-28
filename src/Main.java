@@ -16,7 +16,7 @@ public class Main extends JFrame {
 //        Pesawat miring = new Pesawat(400,240);
         GedungKantor gedung1 = new GedungKantor(19,630);
         g2d.draw(gedung1);
-//        g2d.draw(miring);6
+//        g2d.draw(miring);
 
     }
     public static void main(String[] args) {
