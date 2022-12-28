@@ -13,8 +13,10 @@ public class Main extends JFrame {
 
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
-        Pesawat miring = new Pesawat();
-        Pohon p = new Pohon();
+//        Pesawat miring = new Pesawat(400,240);
+        GedungKantor gedung1 = new GedungKantor(19,630);
+        g2d.draw(gedung1);
+//        g2d.draw(miring);
 
         g2d.draw(miring);
         g2d.draw(p);
