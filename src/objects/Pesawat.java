@@ -84,7 +84,7 @@ public class Pesawat extends Path2D.Double {
         g.fill(vinyl1);
         g.fill(vinyl2);
         g.fill(pathKepala);
-        g.setColor(Color.black);
+        g.setColor(Color.red);
 
 
 //appending additional
