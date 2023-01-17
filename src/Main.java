@@ -12,6 +12,8 @@ public class Main extends JFrame {
 
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
+        Pesawat miring = new Pesawat();
+        Pohon p = new Pohon();
 
 //        Pesawat miring = new Pesawat(400,240, g2d);
 //         g2d.draw(miring);
