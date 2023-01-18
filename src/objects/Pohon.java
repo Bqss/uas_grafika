@@ -1,5 +1,6 @@
 package objects;
 
+import java.awt.geom.AffineTransform;
 import java.awt.geom.Arc2D;
 import java.awt.geom.Path2D;
 
@@ -33,6 +34,7 @@ public class Pohon extends Path2D.Double {
         this.lineTo((296-this.xInit)+x,(555-this.yInit)+y);
         this.moveTo((287-this.xInit)+x,(564-this.yInit)+y);
         this.lineTo((287-this.xInit)+x,(547-this.yInit)+y);
+
 
     }
 }
