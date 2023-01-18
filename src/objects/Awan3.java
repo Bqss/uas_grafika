@@ -3,23 +3,23 @@ package objects;
 import java.awt.geom.Path2D;
 
 public class Awan3 extends Path2D.Double {
-    int xInit = 905;
-    int yInit = 471;
+    int xInit = 101;
+    int yInit = 122;
     public Awan3(int x, int y){
         int x2 = - this.xInit + x;
         int y2 = - this.yInit + y;
-        this.moveTo(905 + x2,471 + y2);
-        this.curveTo(905 + x2,446 +y2,925+x2,426+y2,949 + x2,425 + y2);
-        this.curveTo(949 + x2,407 + y2,963 + x2,393 + y2,981 + x2,393 + y2);
-        this.curveTo(990 + x2,393 + y2,998 + x2,396 + y2, 1003 + x2,402 + y2);
-        this.curveTo(1012 + x2,382 + y2,1033 + x2,367 + y2,1057 + x2,367 + y2 );
-        this.curveTo(1089 + x2,367 + y2,1115 + x2,393 + y2,1115 + x2,425 + y2);
-        this.curveTo(1115 + x2,431 +y2,1114+x2,437+y2,1112+x2,443+y2);
-        this.curveTo(1129+x2,441+y2,1145+x2,453+y2,1148+x2,470+y2);
-        this.curveTo(1150+x2,478+y2,1148+x2,487+y2,1144+x2,493+y2);
-        this.curveTo(1129+x2,514+y2,1129+x2,515+y2,1117+x2,516+y2);
-        this.curveTo(1072+x2,521+y2,941+x2,515+y2,937+x2,514+y2);
-        this.curveTo(919 + x2,508 + y2,905 + x2,491+y2,905+x2,471+y2);
+        this.moveTo(101 + x2,122 + y2);
+        this.curveTo(93 + x2,120 +y2,87+x2,112+y2,87 + x2,102 + y2);
+        this.curveTo(87 + x2,91 + y2,96 + x2,82 + y2,107 + x2,82 + y2);
+        this.curveTo(107 + x2,73 + y2,113 + x2,67 + y2, 122 + x2,67 + y2);
+        this.curveTo(126 + x2,67 + y2,129 + x2,68 + y2,132 + x2,71 + y2 );
+        this.curveTo(136 + x2,62 + y2,145 + x2,55 + y2,156 + x2,55 + y2);
+        this.curveTo(171 + x2,55 +y2,183+x2,67+y2,182+x2,90+y2);
+        this.curveTo(190+x2,89+y2,197+x2,94+y2,198+x2,102+y2);
+        this.curveTo(199+x2,106+y2,198+x2,110+y2,197+x2,113+y2);
+        this.curveTo(190+x2,122+y2,189+x2,123+y2,184+x2,123+y2);
+        this.curveTo(163+x2,126+y2,103+x2,123+y2,101+x2,122+y2);
+//        this.curveTo(919 + x2,508 + y2,905 + x2,491+y2,905+x2,471+y2);
         closePath();
 
 

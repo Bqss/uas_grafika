@@ -14,10 +14,11 @@ public class RumahMinimalis extends Path2D.Double {
         Rectangle2D.Double r3 = new Rectangle2D.Double((191-this.xInit)+x,(554-this.yInit)+y,16,55);
 
         this.moveTo(x,y);
-        this.lineTo((154 - this.xInit )+ this.xInit,(445- this.yInit)+this.yInit);
-        this.lineTo((219 - this.xInit )+ this.xInit,(467- this.yInit)+this.yInit);
-        this.lineTo((219 - this.xInit )+ this.xInit,(628- this.yInit)+this.yInit);
-        this.closePath();
+        this.lineTo((154 - this.xInit )+ x,(445- this.yInit)+ y);
+        this.lineTo((221 - this.xInit )+ x,(467- this.yInit)+ y);
+        this.lineTo((219 - this.xInit )+ x,(628- this.yInit)+ y);
+        this.lineTo((154 - this.xInit) + x , (628- this.yInit) +  y);
+//        this.closePath();
 
         for (int i = 0; i < 9; i++) {
             this.moveTo((166-this.xInit)+x,((473 - this.yInit + y) + 9 * i));
