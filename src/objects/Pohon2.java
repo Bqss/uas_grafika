@@ -1,31 +1,29 @@
 package objects;
 
-import java.awt.*;
+
 import java.awt.geom.Path2D;
+
 import java.awt.geom.RoundRectangle2D;
 
 public class Pohon2 extends Path2D.Double {
-    public Pohon2(){
-        Daun();
-        Batang();
+    int xInit = 637;
+    int yInit = 571;
+    public Pohon2(int x, int y){
+        RoundRectangle2D daun = new RoundRectangle2D.Float((620- this.xInit)+x,(475-this.yInit)+y,33,77,50,50);
+       this.moveTo(x,y);
+       this.lineTo((637-this.xInit)+x,(539-this.yInit)+y);
+       this.lineTo((646-this.xInit)+x,(531-this.yInit)+y);
+       this.moveTo((637-this.xInit)+x,(539-this.yInit)+y);
+       this.lineTo((637-this.xInit)+x,(525-this.yInit)+y);
+       this.lineTo((628-this.xInit)+x,(516-this.yInit)+y);
+       this.moveTo((637-this.xInit)+x,(525-this.yInit)+y);
+       this.lineTo((637-this.xInit)+x,(510-this.yInit)+y);
+       this.lineTo((646-this.xInit)+x,(501-this.yInit)+y);
+       this.moveTo((637-this.xInit)+x,(510-this.yInit)+y);
+       this.lineTo((637-this.xInit)+x,(496-this.yInit)+y);
+       this.append(daun,false);
+
     }
-    public Shape Daun(){
-        //Daun
-        RoundRectangle2D kotak2 = new RoundRectangle2D.Float(624,205,116,271,50,50);
-        return kotak2;
-    }
-    public Shape Batang(){
-        //batang
-        this.moveTo(683,562);
-        this.lineTo(683,299);
-        //ranting
-        this.moveTo(683,449);
-        this.lineTo(714,421);
-        this.moveTo(683,399);
-        this.lineTo(651,370);
-        this.moveTo(683,346);
-        lineTo(714,314);
-        return null;
-    }
+
 
 }
