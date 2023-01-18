@@ -14,22 +14,18 @@ public class Main extends JFrame {
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
         Pesawat miring = new Pesawat();
-        Pohon p = new Pohon();
-        GedungToko b = new GedungToko();
-        Pohon2 p2 = new Pohon2();
+        Pohon p = new Pohon(100,500);
+//        GedungToko b = new GedungToko();
+//        Pohon2 p2 = new Pohon2();
+//        Awan2 a1 = new Awan2(100,400);
 
 
-
-
-//        g2d.draw(miring);
-//        g2d.draw(p);
-        g2d.draw(p2);
-        g2d.draw(p2.Daun());
+        g2d.draw(p);
 
     }
     public static void main(String[] args) {
         Main test = new Main();
-        test.setSize(1366,768);
+        test.setSize(1020,720);
         test.setLocationRelativeTo(null);
         test.setVisible(true);
     }
