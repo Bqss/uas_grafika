@@ -14,13 +14,9 @@ public class Main extends JFrame {
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
         Pesawat miring = new Pesawat();
-        Pohon p = new Pohon(100,500);
-//        GedungToko b = new GedungToko();
-//        Pohon2 p2 = new Pohon2();
-//        Awan2 a1 = new Awan2(100,400);
+        Pohon2 ph = new Pohon2(637,571);
 
-
-        g2d.draw(p);
+        g2d.draw(ph);
 
     }
     public static void main(String[] args) {
