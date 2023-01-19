@@ -5,11 +5,14 @@ import objects.*;
 
 import java.awt.*;
 import java.awt.geom.AffineTransform;
+import java.awt.geom.Line2D;
 import java.awt.geom.Path2D;
+import java.awt.geom.Rectangle2D;
 
 public class Background extends Path2D.Double{
     int xFrame = 1080;
     public Background(Graphics2D g){
+        Graphics2D garisputus = (Graphics2D) g;
 
         AffineTransform scale = new AffineTransform();
 //        AffineTransform scale2 = new AffineTransform();
@@ -22,6 +25,17 @@ public class Background extends Path2D.Double{
         moveTo(0,573);
         lineTo(this.xFrame*4,573);
         closePath();
+
+        BasicStroke bs4 = new BasicStroke(
+                1,
+                BasicStroke.CAP_BUTT,
+                BasicStroke.JOIN_BEVEL,
+                1,
+                new float[] {10f, 10f},
+                6.0f
+        );
+        g.setStroke(bs4);
+        garisputus.draw(new Line2D.Double(0,644,this.xFrame*4,644));
 
 //        garis bawah
         moveTo(0,717);

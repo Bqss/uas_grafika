@@ -8,7 +8,7 @@ import java.awt.geom.Path2D;
 
 public class Pesawat extends Path2D.Double {
 
-    public Pesawat(int x, int y, Graphics2D g) {
+    public Pesawat(double  x, double y, Graphics2D g) {
         AffineTransform scale = new AffineTransform();
         scale.setToScale(0.7,0.7);
         Ellipse2D.Double l = new Ellipse2D.Double(x + 76, y + 68, 25, 25);
@@ -28,6 +28,8 @@ public class Pesawat extends Path2D.Double {
         vinyl1.lineTo((210 - 172) + x, (378 - 240) + y);
         vinyl1.lineTo((242 - 172) + x, (384 - 240) + y);
         vinyl1.lineTo((203 - 172) + x, (371 - 240) + y);
+
+
 
         GeneralPath vinyl2 = new GeneralPath();
         vinyl2.moveTo((221 - 172) + x, (385 - 240) + y);
