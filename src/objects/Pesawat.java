@@ -1,5 +1,6 @@
 package objects;
 import java.awt.*;
+import java.awt.geom.AffineTransform;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Path2D;
@@ -8,9 +9,12 @@ import java.awt.geom.Path2D;
 public class Pesawat extends Path2D.Double {
 
     public Pesawat(int x, int y, Graphics2D g) {
+        AffineTransform scale = new AffineTransform();
+        scale.setToScale(0.7,0.7);
         Ellipse2D.Double l = new Ellipse2D.Double(x + 76, y + 68, 25, 25);
         Ellipse2D.Double l2 = new Ellipse2D.Double(x + 130.7, y + 63, 32, 32);
         Ellipse2D.Double l3 = new Ellipse2D.Double(x + 199.5, y + 66, 32.5, 32.5);
+
 
         GeneralPath pathKepala = new GeneralPath();
         pathKepala.moveTo((465 - 172) + x, (281 - 240) + y);
@@ -69,31 +73,78 @@ public class Pesawat extends Path2D.Double {
 
 //  main plane coloring
 
-        g.setColor(Color.white);
-        g.setStroke(new BasicStroke(2.0f));
-        g.fill(this);
+
+        g.setStroke(new BasicStroke(3.0f));
+//        g.fill(this);
         g.setColor(Color.black);
 
 
 // additional coloring for wings and etc
 
-        g.setColor(new Color(253, 139, 41));
-        g.fill(l);
-        g.fill(l2);
-        g.fill(l3);
-        g.fill(vinyl1);
-        g.fill(vinyl2);
-        g.fill(pathKepala);
-        g.setColor(Color.red);
+
+        //appending additional
+//        g.draw(scale.createTransformedShape(this));
+
+        this.append(l,false);
+        this.append(l2,false);
+        this.append(l3,false);
+        this.append(pathKepala,false);
+
+        this.append(vinyl1,false);
+        this.append(vinyl2,false);
 
 
-//appending additional
-        this.append(l, false);
-        this.append(l2, false);
-        this.append(l3, false);
-        this.append(pathKepala, false);
-        this.append(vinyl1, false);
-        this.append(vinyl2, false);
+//        g.draw(scale.createTransformedShape(this));
+//        g.setPaint(new Color(253,139,41));
+//        g.fill(scale.createTransformedShape(pathKepala));
+//        g.fill(scale.createTransformedShape(l));
+//        g.fill(scale.createTransformedShape(l2));
+//        g.fill(scale.createTransformedShape(l3));
+//        g.fill(scale.createTransformedShape(vinyl1));
+//        g.fill(scale.createTransformedShape(vinyl2));
+
+
+
+
+
+//        this.append(scale.createTransformedShape(l),false);
+//        this.append(scale.createTransformedShape(l2),false);
+//        this.append(scale.createTransformedShape(l3),false);
+//        this.append(scale.createTransformedShape(pathKepala),false);
+//
+//        this.append(scale.createTransformedShape(vinyl1),false);
+//        this.append(scale.createTransformedShape(vinyl2),false);
+
+
+
+//        g.draw(scale.createTransformedShape(this));
+
+//        this.append(scale.createTransformedShape(this),false);
+
+//        g.setColor(new Color(253, 139, 41));
+//        g.fill(scale.createTransformedShape(l));
+//        g.fill(scale.createTransformedShape(l2));
+//        g.fill(scale.createTransformedShape(l3));
+//        g.fill(scale.createTransformedShape(pathKepala));
+//
+//        g.fill(scale.createTransformedShape(vinyl1));
+//        g.fill(scale.createTransformedShape(vinyl2));
+//
+//        g.fill(scale.createTransformedShape(l));
+//        g.fill(scale.createTransformedShape(l2));
+//        g.fill(scale.createTransformedShape(l3));
+//        g.fill(scale.createTransformedShape(pathKepala));
+//
+//        g.draw(scale.createTransformedShape(vinyl1));
+//        g.draw(scale.createTransformedShape(vinyl2));
+//
+//        g.draw(scale.createTransformedShape(this));
+//
+//        g.setPaint(Color.black);
+
+
+
+
 
     }
 }

@@ -3,11 +3,11 @@ package objects;
 import java.awt.geom.Path2D;
 
 public class Awan3 extends Path2D.Double {
-    int xInit = 101;
-    int yInit = 122;
-    public Awan3(int x, int y){
-        int x2 = - this.xInit + x;
-        int y2 = - this.yInit + y;
+    double xInit = 101;
+    double yInit = 122;
+    public Awan3(double x, double y){
+        double x2 = - this.xInit + x;
+        double y2 = - this.yInit + y;
         this.moveTo(101 + x2,122 + y2);
         this.curveTo(93 + x2,120 +y2,87+x2,112+y2,87 + x2,102 + y2);
         this.curveTo(87 + x2,91 + y2,96 + x2,82 + y2,107 + x2,82 + y2);
